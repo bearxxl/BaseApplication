@@ -96,7 +96,7 @@ public class ByteUtil {
      * @param opts  可不传
      * @return  bitmap
      */
-    public static Bitmap bytesToBytes(byte[] bytes, BitmapFactory.Options opts) {
+    public static Bitmap bytesToBitmap(byte[] bytes, BitmapFactory.Options opts) {
         if (bytes != null)
             if (opts != null)
                 return BitmapFactory.decodeByteArray(bytes, 0, bytes.length, opts);
