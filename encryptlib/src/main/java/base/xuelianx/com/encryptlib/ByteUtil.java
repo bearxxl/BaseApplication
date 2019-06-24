@@ -39,7 +39,7 @@ public class ByteUtil {
      * @param sourceStr 待转换的十六进制字符串
      * @return 字节数组
      */
-    private static byte[] hexToBytes(String sourceStr) {
+    public static byte[] hexToBytes(String sourceStr) {
         if (sourceStr == null || sourceStr.length() < 2) {
             return new byte[0];
         }

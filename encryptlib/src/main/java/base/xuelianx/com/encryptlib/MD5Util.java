@@ -1,6 +1,5 @@
 package base.xuelianx.com.encryptlib;
 
-import android.graphics.Bitmap;
 import android.text.TextUtils;
 
 import java.io.File;
@@ -30,7 +29,7 @@ public class MD5Util {
         try {
             //设置输入流的缓存大小 字节
             byte[] buffer = new byte[8192];
-            int len = 0;
+            int len ;
             MessageDigest md = MessageDigest.getInstance("MD5");
             FileInputStream fis = new FileInputStream(sourceFile);
             //将整个文件全部读入到加密器中
