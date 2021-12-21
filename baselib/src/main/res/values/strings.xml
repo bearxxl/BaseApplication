@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">小远讲解</string>
+
+    <string-array name="log_letter">
+        <item>VERBOSE</item>
+        <item>DEBUG</item>
+        <item>INFO</item>
+        <item>WARN</item>
+        <item>ERROR</item>
+        <item>WTF</item>
+        <item>ASSERT</item>
+    </string-array>
+</resources>

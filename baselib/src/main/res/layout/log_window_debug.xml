@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ListView
+        android:id="@+id/log_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log_btn_lay"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1px"
+        android:scrollbars="vertical"
+        android:transcriptMode="alwaysScroll"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/log_btn_lay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="#33000000"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/log_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/log_letter"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/log_tag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="TAG:"
+            android:inputType="textPersonName" />
+
+
+        <Button
+            android:id="@+id/log_move_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="移动查看开关"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/log_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

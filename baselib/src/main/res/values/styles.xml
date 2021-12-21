@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundButtonAttr">
+        <attr name="radius" format="dimension" />
+        <attr name="disableBackground" format="color" />
+        <attr name="pressedBackground" format="color" />
+        <attr name="normalBackground" format="color" />
+        <attr name="textNormalColor" format="color" />
+        <attr name="textPressedColor" format="color" />
+    </declare-styleable>
+
+
+    <style name="baselineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#dfdfdf</item>
+    </style>
+
+    <style name="baselineStyleVertical">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#dfdfdf</item>
+    </style>
+
+    <!--BaseDialog样式-->
+    <style name="BaseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--Dialog进入退出动画-->
+    <style name="EnterExitAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/exit_anim</item>
+    </style>
+</resources>
